@@ -36,7 +36,7 @@ Let's write a simple `CityImporter` class that would handle this:
 
 ```ruby
 class CityImporter
-  attr_accessor :csv_file_path
+  attr_reader :csv_rows
 
   def initialize(csv_file_path)
     @csv_rows = CSV.read(csv_file_path)
